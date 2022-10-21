@@ -1,0 +1,21 @@
+html, body, #root, .App {
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+  background: rgba(128, 214, 255);
+}
+
+.App::before {
+    content: "";
+    background-image: url('./earth.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
